@@ -1,0 +1,18 @@
+<svg version="1.1" baseProfile="basic" id="Calque_1" xmlns="hZp://www.w3.org/2000/svg" xmlns:xlink="hZp://www.w3.org/1999/xlink"
+    viewBox="0	0	600	600" xml:space="preserve">
+    <!-- M 10 10 signifie qu'on commence à x=10 et y=10 -->
+    <!-- H signifie une ligne horizontal vers le point x90 -->
+    <!-- V signifie une ligne vertical vers le point y90 -->
+    <!-- H signifie une ligne horizontal vers le point x10 -->
+    <!-- Z signifie qu'on retourne au point initial M 10 10 || L 10 10 signifie qu'on trace une ligne vers le point 10 10-->
+
+    <path d="M 10 10 H 90 V 90 H 10 Z" fill="" stroke="" stroke-width=""  id="theMotionPath"/>
+
+    <circle cx="10" cy="10" r="10" fill="red">
+        <animateMotion begin="0s" dur="2s" repeatDur="indefinite">
+            <mpath xlink:href="#theMotionPath" />
+        </animateMotion>
+    </circle>
+
+
+</svg>
